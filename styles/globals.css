@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 3, 16, 46;
+  --background-end-rgb: 168, 192, 247;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 3, 16, 46;
+    --background-end-rgb: 168, 192, 247;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: radial-gradient(circle, rgb(33, 70, 119)2%, rgb(10, 35, 66)20%, rgb(0, 9, 17)60%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 45%;
+}
